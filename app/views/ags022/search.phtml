@@ -1,0 +1,297 @@
+<?php
+/**
+ * @var \Phalcon\Mvc\View\Engine\Php $this
+ */
+?>
+
+<?php use Phalcon\Tag; ?>
+
+<div class="row">
+    <nav>
+        <ul class="pager">
+            <li class="previous"><?php echo $this->tag->linkTo(["ags022/index", "Go Back"]); ?></li>
+            <li class="next"><?php echo $this->tag->linkTo(["ags022/new", "Create "]); ?></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="page-header">
+    <h1>Search result</h1>
+</div>
+
+<?php echo $this->getContent(); ?>
+
+<div class="row">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Recnum</th>
+            <th>Codigo</th>
+            <th>Nome Of Fantasia</th>
+            <th>Razao Of Social</th>
+            <th>Endereco</th>
+            <th>Bairro</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <th>Cep</th>
+            <th>Cgc</th>
+            <th>Ddd</th>
+            <th>Telefone</th>
+            <th>Fax</th>
+            <th>Inscricao</th>
+            <th>Inscricao Of Munic</th>
+            <th>Nf Of Numero</th>
+            <th>Nf Of Modelo</th>
+            <th>Nf Of Online</th>
+            <th>Os Of Numero</th>
+            <th>Os Of Modelo</th>
+            <th>Fatura Of Numero</th>
+            <th>Localpagto</th>
+            <th>Cadastro Of Client</th>
+            <th>Cadastro Of Fornec</th>
+            <th>Regjuntacom</th>
+            <th>Fatura Of Modelo</th>
+            <th>Empresa</th>
+            <th>Folha Of Mensagem</th>
+            <th>Folha Of Mensagem1</th>
+            <th>Folha Of Mensagem2</th>
+            <th>Fator Of Preco</th>
+            <th>Fgts</th>
+            <th>Pedido</th>
+            <th>Modelo1</th>
+            <th>Modelo2</th>
+            <th>Modelo3</th>
+            <th>Modelo4</th>
+            <th>Modelo5</th>
+            <th>Modelo6</th>
+            <th>Modelo7</th>
+            <th>Modelo8</th>
+            <th>Modelo9</th>
+            <th>Uucp</th>
+            <th>Uucp Of Data</th>
+            <th>Uucp Of Hora</th>
+            <th>Pedido Of Compra</th>
+            <th>Cliente</th>
+            <th>Fornecedor</th>
+            <th>Fornecedor Of Emp</th>
+            <th>Fornecedor Of Cod</th>
+            <th>Cliente Of Emp</th>
+            <th>Cliente Of Cod</th>
+            <th>Log</th>
+            <th>Log Of Data</th>
+            <th>Log Of Hora</th>
+            <th>Destinario</th>
+            <th>X</th>
+            <th>Y</th>
+            <th>Distancia</th>
+            <th>Suframa</th>
+            <th>Pedido Of Obs</th>
+            <th>M1</th>
+            <th>M2</th>
+            <th>M3</th>
+            <th>M4</th>
+            <th>M5</th>
+            <th>M6</th>
+            <th>M7</th>
+            <th>M8</th>
+            <th>M9</th>
+            <th>Informatizada</th>
+            <th>Cgc Of 1</th>
+            <th>Nf1</th>
+            <th>Nf2</th>
+            <th>Nf3</th>
+            <th>Nf4</th>
+            <th>Nf5</th>
+            <th>Nf6</th>
+            <th>Nf7</th>
+            <th>Nf8</th>
+            <th>Nf9</th>
+            <th>Oc1</th>
+            <th>Oc2</th>
+            <th>Oc3</th>
+            <th>Oc4</th>
+            <th>Oc5</th>
+            <th>Oc6</th>
+            <th>Oc7</th>
+            <th>Oc8</th>
+            <th>Oc9</th>
+            <th>Cheque</th>
+            <th>Bloqueio Of Nf</th>
+            <th>Bloqueio Of Fatura</th>
+            <th>Bloqueio Of Compra</th>
+            <th>Recibo</th>
+            <th>Fator Of Pedido</th>
+            <th>Cpd</th>
+            <th>Gerente</th>
+            <th>Tesoreiro</th>
+            <th>Dias Of Malote</th>
+            <th>Caf</th>
+            <th>Cafil</th>
+            <th>Ender Of Numero</th>
+            <th>Mult Of Med Of Mensal</th>
+            <th>Possui Of Selofisc</th>
+            <th>Inst Of Banc Of Jur</th>
+            <th>Inst Of Banc Of Fis</th>
+            <th>Id Of Reg</th>
+            <th>Oper Of Isenta</th>
+            <th>Dtregjuntacom</th>
+            <th>Cod Of Municipio</th>
+            <th>Cod Of Uf</th>
+            <th>Cod Of Pais</th>
+            <th>Desc Of Pais</th>
+            <th>Ind Of Perfil</th>
+            <th>Ind Of Atividade</th>
+            <th>Cod Of Receita</th>
+            <th>Campo Of Md5 Of Registro</th>
+
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($page->items as $ags022): ?>
+            <tr>
+                <td><?php echo $ags022->recnum ?></td>
+            <td><?php echo $ags022->codigo ?></td>
+            <td><?php echo $ags022->nome_fantasia ?></td>
+            <td><?php echo $ags022->razao_social ?></td>
+            <td><?php echo $ags022->endereco ?></td>
+            <td><?php echo $ags022->bairro ?></td>
+            <td><?php echo $ags022->cidade ?></td>
+            <td><?php echo $ags022->estado ?></td>
+            <td><?php echo $ags022->cep ?></td>
+            <td><?php echo $ags022->cgc ?></td>
+            <td><?php echo $ags022->ddd ?></td>
+            <td><?php echo $ags022->telefone ?></td>
+            <td><?php echo $ags022->fax ?></td>
+            <td><?php echo $ags022->inscricao ?></td>
+            <td><?php echo $ags022->inscricao_munic ?></td>
+            <td><?php echo $ags022->nf_numero ?></td>
+            <td><?php echo $ags022->nf_modelo ?></td>
+            <td><?php echo $ags022->nf_online ?></td>
+            <td><?php echo $ags022->os_numero ?></td>
+            <td><?php echo $ags022->os_modelo ?></td>
+            <td><?php echo $ags022->fatura_numero ?></td>
+            <td><?php echo $ags022->localpagto ?></td>
+            <td><?php echo $ags022->cadastro_client ?></td>
+            <td><?php echo $ags022->cadastro_fornec ?></td>
+            <td><?php echo $ags022->regjuntacom ?></td>
+            <td><?php echo $ags022->fatura_modelo ?></td>
+            <td><?php echo $ags022->empresa ?></td>
+            <td><?php echo $ags022->folha_mensagem ?></td>
+            <td><?php echo $ags022->folha_mensagem1 ?></td>
+            <td><?php echo $ags022->folha_mensagem2 ?></td>
+            <td><?php echo $ags022->fator_preco ?></td>
+            <td><?php echo $ags022->fgts ?></td>
+            <td><?php echo $ags022->pedido ?></td>
+            <td><?php echo $ags022->modelo1 ?></td>
+            <td><?php echo $ags022->modelo2 ?></td>
+            <td><?php echo $ags022->modelo3 ?></td>
+            <td><?php echo $ags022->modelo4 ?></td>
+            <td><?php echo $ags022->modelo5 ?></td>
+            <td><?php echo $ags022->modelo6 ?></td>
+            <td><?php echo $ags022->modelo7 ?></td>
+            <td><?php echo $ags022->modelo8 ?></td>
+            <td><?php echo $ags022->modelo9 ?></td>
+            <td><?php echo $ags022->uucp ?></td>
+            <td><?php echo $ags022->uucp_data ?></td>
+            <td><?php echo $ags022->uucp_hora ?></td>
+            <td><?php echo $ags022->pedido_compra ?></td>
+            <td><?php echo $ags022->cliente ?></td>
+            <td><?php echo $ags022->fornecedor ?></td>
+            <td><?php echo $ags022->fornecedor_emp ?></td>
+            <td><?php echo $ags022->fornecedor_cod ?></td>
+            <td><?php echo $ags022->cliente_emp ?></td>
+            <td><?php echo $ags022->cliente_cod ?></td>
+            <td><?php echo $ags022->log ?></td>
+            <td><?php echo $ags022->log_data ?></td>
+            <td><?php echo $ags022->log_hora ?></td>
+            <td><?php echo $ags022->destinario ?></td>
+            <td><?php echo $ags022->x ?></td>
+            <td><?php echo $ags022->y ?></td>
+            <td><?php echo $ags022->distancia ?></td>
+            <td><?php echo $ags022->suframa ?></td>
+            <td><?php echo $ags022->pedido_obs ?></td>
+            <td><?php echo $ags022->m1 ?></td>
+            <td><?php echo $ags022->m2 ?></td>
+            <td><?php echo $ags022->m3 ?></td>
+            <td><?php echo $ags022->m4 ?></td>
+            <td><?php echo $ags022->m5 ?></td>
+            <td><?php echo $ags022->m6 ?></td>
+            <td><?php echo $ags022->m7 ?></td>
+            <td><?php echo $ags022->m8 ?></td>
+            <td><?php echo $ags022->m9 ?></td>
+            <td><?php echo $ags022->informatizada ?></td>
+            <td><?php echo $ags022->cgc_1 ?></td>
+            <td><?php echo $ags022->nf1 ?></td>
+            <td><?php echo $ags022->nf2 ?></td>
+            <td><?php echo $ags022->nf3 ?></td>
+            <td><?php echo $ags022->nf4 ?></td>
+            <td><?php echo $ags022->nf5 ?></td>
+            <td><?php echo $ags022->nf6 ?></td>
+            <td><?php echo $ags022->nf7 ?></td>
+            <td><?php echo $ags022->nf8 ?></td>
+            <td><?php echo $ags022->nf9 ?></td>
+            <td><?php echo $ags022->oc1 ?></td>
+            <td><?php echo $ags022->oc2 ?></td>
+            <td><?php echo $ags022->oc3 ?></td>
+            <td><?php echo $ags022->oc4 ?></td>
+            <td><?php echo $ags022->oc5 ?></td>
+            <td><?php echo $ags022->oc6 ?></td>
+            <td><?php echo $ags022->oc7 ?></td>
+            <td><?php echo $ags022->oc8 ?></td>
+            <td><?php echo $ags022->oc9 ?></td>
+            <td><?php echo $ags022->cheque ?></td>
+            <td><?php echo $ags022->bloqueio_nf ?></td>
+            <td><?php echo $ags022->bloqueio_fatura ?></td>
+            <td><?php echo $ags022->bloqueio_compra ?></td>
+            <td><?php echo $ags022->recibo ?></td>
+            <td><?php echo $ags022->fator_pedido ?></td>
+            <td><?php echo $ags022->cpd ?></td>
+            <td><?php echo $ags022->gerente ?></td>
+            <td><?php echo $ags022->tesoreiro ?></td>
+            <td><?php echo $ags022->dias_malote ?></td>
+            <td><?php echo $ags022->caf ?></td>
+            <td><?php echo $ags022->cafil ?></td>
+            <td><?php echo $ags022->ender_numero ?></td>
+            <td><?php echo $ags022->mult_med_mensal ?></td>
+            <td><?php echo $ags022->possui_selofisc ?></td>
+            <td><?php echo $ags022->inst_banc_jur ?></td>
+            <td><?php echo $ags022->inst_banc_fis ?></td>
+            <td><?php echo $ags022->id_reg ?></td>
+            <td><?php echo $ags022->oper_isenta ?></td>
+            <td><?php echo $ags022->dtregjuntacom ?></td>
+            <td><?php echo $ags022->cod_municipio ?></td>
+            <td><?php echo $ags022->cod_uf ?></td>
+            <td><?php echo $ags022->cod_pais ?></td>
+            <td><?php echo $ags022->desc_pais ?></td>
+            <td><?php echo $ags022->ind_perfil ?></td>
+            <td><?php echo $ags022->ind_atividade ?></td>
+            <td><?php echo $ags022->cod_receita ?></td>
+            <td><?php echo $ags022->campo_md5_registro ?></td>
+
+                <td><?php echo $this->tag->linkTo(["ags022/edit/" . $ags022->recnum, "Edit"]); ?></td>
+                <td><?php echo $this->tag->linkTo(["ags022/delete/" . $ags022->recnum, "Delete"]); ?></td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
+
+<div class="row">
+    <div class="col-sm-1">
+        <p class="pagination" style="line-height: 1.42857;padding: 6px 12px;">
+            <?php echo $page->current, "/", $page->total_pages ?>
+        </p>
+    </div>
+    <div class="col-sm-11">
+        <nav>
+            <ul class="pagination">
+                <li><?php echo $this->tag->linkTo("ags022/search", "First") ?></li>
+                <li><?php echo $this->tag->linkTo("ags022/search?page=" . $page->before, "Previous") ?></li>
+                <li><?php echo $this->tag->linkTo("ags022/search?page=" . $page->next, "Next") ?></li>
+                <li><?php echo $this->tag->linkTo("ags022/search?page=" . $page->last, "Last") ?></li>
+            </ul>
+        </nav>
+    </div>
+</div>

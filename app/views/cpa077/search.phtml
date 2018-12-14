@@ -1,0 +1,239 @@
+<?php
+/**
+ * @var \Phalcon\Mvc\View\Engine\Php $this
+ */
+?>
+
+<?php use Phalcon\Tag; ?>
+
+<div class="row">
+    <nav>
+        <ul class="pager">
+            <li class="previous"><?php echo $this->tag->linkTo(["cpa077/index", "Go Back"]); ?></li>
+            <li class="next"><?php echo $this->tag->linkTo(["cpa077/new", "Create "]); ?></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="page-header">
+    <h1>Search result</h1>
+</div>
+
+<?php echo $this->getContent(); ?>
+
+<div class="row">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Recnum</th>
+            <th>Empresa</th>
+            <th>Fornecedor</th>
+            <th>Codigo</th>
+            <th>Codigo Of Invc</th>
+            <th>Codigo Of Barra</th>
+            <th>Codigo Of Fornec</th>
+            <th>Descricao</th>
+            <th>Descricao1</th>
+            <th>Descricao2</th>
+            <th>Descricao3</th>
+            <th>Descricao4</th>
+            <th>Desc Of Maximo</th>
+            <th>Grupo Of Preco</th>
+            <th>Peso Of Liquido</th>
+            <th>Peso Of Bruto</th>
+            <th>Desconto Of Prod</th>
+            <th>Imposto Of Codigo</th>
+            <th>Imposto Of Tipo</th>
+            <th>Embalagem</th>
+            <th>Margem Of Prod</th>
+            <th>Peso Of Prod</th>
+            <th>Observacao</th>
+            <th>Ativo</th>
+            <th>Cadastro Of Data</th>
+            <th>Cadastro Of User</th>
+            <th>Cadastro Of Hora</th>
+            <th>Alteracao Of Data</th>
+            <th>Alteracao Of User</th>
+            <th>Alteracao Of Hora</th>
+            <th>Unidade Of Venda</th>
+            <th>Unidade Of Compra</th>
+            <th>Conversao Of Vd Of Cp</th>
+            <th>Descricao Of Compl</th>
+            <th>Descricao Of Compl Of Invc</th>
+            <th>Visivel Of Filial</th>
+            <th>Estoque</th>
+            <th>Preco Of Lista</th>
+            <th>Preco Of Lista1</th>
+            <th>Preco Of Lista2</th>
+            <th>Preco Of Lista Of Dt</th>
+            <th>Preco Of Lista Of Dt1</th>
+            <th>Preco Of Lista Of Dt2</th>
+            <th>Composto Of Emp</th>
+            <th>Composto Of Forn</th>
+            <th>Composto Of Prod</th>
+            <th>Equivalente Of Emp</th>
+            <th>Equivalente Of For</th>
+            <th>Equivalente Of Pro</th>
+            <th>Semelhante Of Emp</th>
+            <th>Semelhante Of For</th>
+            <th>Semelhante Of Pro</th>
+            <th>Composto Of Qtde</th>
+            <th>Minimo</th>
+            <th>Maximo</th>
+            <th>Embalagem Of Venda</th>
+            <th>Conv Of Com Of Ven</th>
+            <th>Vendedor</th>
+            <th>Comp Of Emp</th>
+            <th>Comp Of For</th>
+            <th>Comp Of Pro</th>
+            <th>Medida</th>
+            <th>Medida Of Desc</th>
+            <th>Cb</th>
+            <th>Decimais</th>
+            <th>Ipi</th>
+            <th>Aplicacao</th>
+            <th>Medida Of Un</th>
+            <th>Caf</th>
+            <th>Cafil</th>
+            <th>Abandonado</th>
+            <th>Id Of Reg</th>
+            <th>Indice Of Compra</th>
+            <th>Coefreducao</th>
+            <th>Codigo Of Forn</th>
+            <th>Descricao Of Forn</th>
+            <th>Coefsubst</th>
+            <th>Icms Of Proprio</th>
+            <th>Unidade Of Transf</th>
+            <th>Classfiscal</th>
+            <th>Ipi Of Venda</th>
+            <th>Grupo Of Comissao</th>
+            <th>Id Of Produto</th>
+            <th>Substituido</th>
+            <th>Old Of Codbar</th>
+            <th>Emb Of Sep</th>
+            <th>Extipi</th>
+            <th>Complemento</th>
+            <th>Cest</th>
+
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($page->items as $cpa077): ?>
+            <tr>
+                <td><?php echo $cpa077->recnum ?></td>
+            <td><?php echo $cpa077->empresa ?></td>
+            <td><?php echo $cpa077->fornecedor ?></td>
+            <td><?php echo $cpa077->codigo ?></td>
+            <td><?php echo $cpa077->codigo_invc ?></td>
+            <td><?php echo $cpa077->codigo_barra ?></td>
+            <td><?php echo $cpa077->codigo_fornec ?></td>
+            <td><?php echo $cpa077->descricao ?></td>
+            <td><?php echo $cpa077->descricao1 ?></td>
+            <td><?php echo $cpa077->descricao2 ?></td>
+            <td><?php echo $cpa077->descricao3 ?></td>
+            <td><?php echo $cpa077->descricao4 ?></td>
+            <td><?php echo $cpa077->desc_maximo ?></td>
+            <td><?php echo $cpa077->grupo_preco ?></td>
+            <td><?php echo $cpa077->peso_liquido ?></td>
+            <td><?php echo $cpa077->peso_bruto ?></td>
+            <td><?php echo $cpa077->desconto_prod ?></td>
+            <td><?php echo $cpa077->imposto_codigo ?></td>
+            <td><?php echo $cpa077->imposto_tipo ?></td>
+            <td><?php echo $cpa077->embalagem ?></td>
+            <td><?php echo $cpa077->margem_prod ?></td>
+            <td><?php echo $cpa077->peso_prod ?></td>
+            <td><?php echo $cpa077->observacao ?></td>
+            <td><?php echo $cpa077->ativo ?></td>
+            <td><?php echo $cpa077->cadastro_data ?></td>
+            <td><?php echo $cpa077->cadastro_user ?></td>
+            <td><?php echo $cpa077->cadastro_hora ?></td>
+            <td><?php echo $cpa077->alteracao_data ?></td>
+            <td><?php echo $cpa077->alteracao_user ?></td>
+            <td><?php echo $cpa077->alteracao_hora ?></td>
+            <td><?php echo $cpa077->unidade_venda ?></td>
+            <td><?php echo $cpa077->unidade_compra ?></td>
+            <td><?php echo $cpa077->conversao_vd_cp ?></td>
+            <td><?php echo $cpa077->descricao_compl ?></td>
+            <td><?php echo $cpa077->descricao_compl_invc ?></td>
+            <td><?php echo $cpa077->visivel_filial ?></td>
+            <td><?php echo $cpa077->estoque ?></td>
+            <td><?php echo $cpa077->preco_lista ?></td>
+            <td><?php echo $cpa077->preco_lista1 ?></td>
+            <td><?php echo $cpa077->preco_lista2 ?></td>
+            <td><?php echo $cpa077->preco_lista_dt ?></td>
+            <td><?php echo $cpa077->preco_lista_dt1 ?></td>
+            <td><?php echo $cpa077->preco_lista_dt2 ?></td>
+            <td><?php echo $cpa077->composto_emp ?></td>
+            <td><?php echo $cpa077->composto_forn ?></td>
+            <td><?php echo $cpa077->composto_prod ?></td>
+            <td><?php echo $cpa077->equivalente_emp ?></td>
+            <td><?php echo $cpa077->equivalente_for ?></td>
+            <td><?php echo $cpa077->equivalente_pro ?></td>
+            <td><?php echo $cpa077->semelhante_emp ?></td>
+            <td><?php echo $cpa077->semelhante_for ?></td>
+            <td><?php echo $cpa077->semelhante_pro ?></td>
+            <td><?php echo $cpa077->composto_qtde ?></td>
+            <td><?php echo $cpa077->minimo ?></td>
+            <td><?php echo $cpa077->maximo ?></td>
+            <td><?php echo $cpa077->embalagem_venda ?></td>
+            <td><?php echo $cpa077->conv_com_ven ?></td>
+            <td><?php echo $cpa077->vendedor ?></td>
+            <td><?php echo $cpa077->comp_emp ?></td>
+            <td><?php echo $cpa077->comp_for ?></td>
+            <td><?php echo $cpa077->comp_pro ?></td>
+            <td><?php echo $cpa077->medida ?></td>
+            <td><?php echo $cpa077->medida_desc ?></td>
+            <td><?php echo $cpa077->cb ?></td>
+            <td><?php echo $cpa077->decimais ?></td>
+            <td><?php echo $cpa077->ipi ?></td>
+            <td><?php echo $cpa077->aplicacao ?></td>
+            <td><?php echo $cpa077->medida_un ?></td>
+            <td><?php echo $cpa077->caf ?></td>
+            <td><?php echo $cpa077->cafil ?></td>
+            <td><?php echo $cpa077->abandonado ?></td>
+            <td><?php echo $cpa077->id_reg ?></td>
+            <td><?php echo $cpa077->indice_compra ?></td>
+            <td><?php echo $cpa077->coefreducao ?></td>
+            <td><?php echo $cpa077->codigo_forn ?></td>
+            <td><?php echo $cpa077->descricao_forn ?></td>
+            <td><?php echo $cpa077->coefsubst ?></td>
+            <td><?php echo $cpa077->icms_proprio ?></td>
+            <td><?php echo $cpa077->unidade_transf ?></td>
+            <td><?php echo $cpa077->classfiscal ?></td>
+            <td><?php echo $cpa077->ipi_venda ?></td>
+            <td><?php echo $cpa077->grupo_comissao ?></td>
+            <td><?php echo $cpa077->id_produto ?></td>
+            <td><?php echo $cpa077->substituido ?></td>
+            <td><?php echo $cpa077->old_codbar ?></td>
+            <td><?php echo $cpa077->emb_sep ?></td>
+            <td><?php echo $cpa077->extipi ?></td>
+            <td><?php echo $cpa077->complemento ?></td>
+            <td><?php echo $cpa077->cest ?></td>
+
+                <td><?php echo $this->tag->linkTo(["cpa077/edit/" . $cpa077->recnum, "Edit"]); ?></td>
+                <td><?php echo $this->tag->linkTo(["cpa077/delete/" . $cpa077->recnum, "Delete"]); ?></td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
+
+<div class="row">
+    <div class="col-sm-1">
+        <p class="pagination" style="line-height: 1.42857;padding: 6px 12px;">
+            <?php echo $page->current, "/", $page->total_pages ?>
+        </p>
+    </div>
+    <div class="col-sm-11">
+        <nav>
+            <ul class="pagination">
+                <li><?php echo $this->tag->linkTo("cpa077/search", "First") ?></li>
+                <li><?php echo $this->tag->linkTo("cpa077/search?page=" . $page->before, "Previous") ?></li>
+                <li><?php echo $this->tag->linkTo("cpa077/search?page=" . $page->next, "Next") ?></li>
+                <li><?php echo $this->tag->linkTo("cpa077/search?page=" . $page->last, "Last") ?></li>
+            </ul>
+        </nav>
+    </div>
+</div>
